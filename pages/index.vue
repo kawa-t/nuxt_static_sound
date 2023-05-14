@@ -16,11 +16,11 @@ import DoarkModeSwich from '@/components/DarkModeSwich.vue';
       Audio Box
     </h3>
     <main class="flex flex-wrap content-center p-0 w-1/2 mx-auto">
-      <AudioBox audioSrc="/sounds/game2065.wav" imageSrc="/images/fog-day.svg" />
-      <AudioBox audioSrc="/sounds/game2065.wav" imageSrc="/images/rain.svg" />
-      <AudioBox audioSrc="/sounds/game2065.wav" imageSrc="/images/fog-day.svg" />
-      <AudioBox audioSrc="/sounds/get.mp3" imageSrc="/images/fog-day.svg" />
-      <AudioBox audioSrc="/sounds/game2065.wav" imageSrc="/images/fog-day.svg" />
+      <AudioBox audioSrc="/sounds/fog-day.mp3" imageSrc="/images/fog-day.svg" />
+      <AudioBox audioSrc="/sounds/rain.wav" imageSrc="/images/rain.svg" />
+      <AudioBox audioSrc="/sounds/night.mp3" imageSrc="/images/starry-night.svg" />
+      <AudioBox audioSrc="/sounds/tornado.mp3" imageSrc="/images/tornado.svg" />
+      <AudioBox audioSrc="/sounds/niconico.mp3" imageSrc="/images/wind.svg" />
     </main>
   </div>
 </template>

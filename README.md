@@ -1,42 +1,13 @@
-# Nuxt 3 Minimal Starter
+# Audio Box
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+<img width="1229" alt="top" src="https://user-images.githubusercontent.com/56011845/90330482-ede70080-dfe7-11ea-963c-162e9dea9e8d.png">
 
-## Setup
+<h3 align="center">https://nuxt-pokedex.firebaseapp.com/</h3>
 
-Make sure to install the dependencies:
+## icons
 
-```bash
-# yarn
-yarn install
+https://bas.dev/work/meteocons
 
-# npm
-npm install
+## musics
 
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+https://mixkit.co/

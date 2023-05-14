@@ -39,7 +39,10 @@ const toggleAudio = () => {
 </script>
 
 <template>
-  <div class="w-1/3 my-10 hover:opacity-100" :class="isPlaying ? 'opacity-100' : 'opacity-60'">
+  <div
+    class="w-1/3 my-10 hover:opacity-100 transition-all"
+    :class="isPlaying ? 'opacity-100' : 'opacity-70'"
+  >
     <audio ref="audioRef" :src="audioSrc" loop />
     <img :src="imageSrc" alt="wheather-images" class="wheather-img" @click="toggleAudio" />
     <div class="h-16 overflow-auto">
