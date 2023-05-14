@@ -1,33 +1,26 @@
 <script setup lang="ts">
-import AudioBox from "@/components/AudioBox.vue";
-const isDarkMode = ref(true);
-
-const toggleDarkMode = () => {
-  isDarkMode.value = !isDarkMode.value;
-  const html = document.querySelector("html");
-  if (html) {
-    html.classList.toggle("dark");
-  }
-};
+import AudioBox from '@/components/AudioBox.vue';
+import DoarkModeSwich from '@/components/DarkModeSwich.vue';
 </script>
+
 <template>
-  <div class="dark:bg-gray-800 p-0">
-    <div class="space-x-2">
-      <label>
-        <input @click="toggleDarkMode" type="checkbox" class="peer sr-only" />
-        <span
-          class="block w-[2em] cursor-pointer bg-gray-500 rounded-full p-[1px] after:block after:h-[1em] after:w-[1em] after:rounded-full after:bg-white after:transition peer-checked:bg-blue-500 peer-checked:after:translate-x-[calc(100%-2px)]"
-        >
-        </span>
-      </label>
-      <img
-        :src="
-          isDarkMode ? '/images/darkmode_night.svg' : '/images/darkmode_day.svg'
-        "
-        :alt="isDarkMode ? 'darkmode_night' : 'darkmode_day'"
-        class="w-12"
-      />
-    </div>
-    <AudioBox audioSrc="/sounds/game2065.wav" imageSrc="/images/fog-day.svg" />
+  <div
+    class="min-h-screen flex flex-col dark:bg-gray-800 duration-500 transition-all dark:transition-all dark:duration-500"
+  >
+    <header>
+      <DoarkModeSwich />
+    </header>
+    <h3
+      class="flex content-center mx-auto dark:text-orange-50 mt-6 font-100 text-3xl mb-2 text-gray-700 tracking-wider duration-500 transition-all dark:transition-all dark:duration-500"
+    >
+      Audio Box
+    </h3>
+    <main class="flex flex-wrap content-center p-0 w-1/2 mx-auto">
+      <AudioBox audioSrc="/sounds/fog-day.mp3" imageSrc="/images/fog-day.svg" />
+      <AudioBox audioSrc="/sounds/rain.wav" imageSrc="/images/rain.svg" />
+      <AudioBox audioSrc="/sounds/night.mp3" imageSrc="/images/starry-night.svg" />
+      <AudioBox audioSrc="/sounds/tornado.mp3" imageSrc="/images/tornado.svg" />
+      <AudioBox audioSrc="/sounds/niconico.mp3" imageSrc="/images/wind.svg" />
+    </main>
   </div>
 </template>

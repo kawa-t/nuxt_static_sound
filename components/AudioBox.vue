@@ -39,23 +39,27 @@ const toggleAudio = () => {
 </script>
 
 <template>
-  <div>
+  <div
+    class="w-1/3 my-10 hover:opacity-100 transition-all"
+    :class="isPlaying ? 'opacity-100' : 'opacity-70'"
+  >
     <audio ref="audioRef" :src="audioSrc" loop />
-    <img
-      :src="imageSrc"
-      alt="wheather-images"
-      class="wheather-img"
-      @click="toggleAudio"
-    />
-    <input
-      type="range"
-      ref="volumeControlRef"
-      min="0"
-      max="100"
-      @change="changeVolume"
-      class="volume-control"
-    />
-    <p class="dark:text-slate-400">{{ volumeValue }}</p>
+    <img :src="imageSrc" alt="wheather-images" class="wheather-img" @click="toggleAudio" />
+    <div class="h-16 overflow-auto">
+      <div v-if="isPlaying" class="flex flex-col items-center">
+        <input
+          type="range"
+          ref="volumeControlRef"
+          min="0"
+          max="100"
+          @change="changeVolume"
+          class="volume-control"
+        />
+        <p class="dark:text-slate-400 mt-4 transition-all dark:transition-all dark:duration-500">
+          {{ volumeValue }}
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -71,7 +75,7 @@ const toggleAudio = () => {
 
 .volume-control {
   display: block;
-  width: 80%;
+  width: 40%;
   margin: 0 auto;
   margin-top: 1rem;
   height: 3px;
