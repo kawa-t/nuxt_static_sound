@@ -3,9 +3,9 @@ const isDarkMode = ref(true);
 
 const toggleDarkMode = () => {
   isDarkMode.value = !isDarkMode.value;
-  const html = document.querySelector("html");
+  const html = document.querySelector('html');
   if (html) {
-    html.classList.toggle("dark");
+    html.classList.toggle('dark');
   }
 };
 </script>
@@ -20,9 +20,7 @@ const toggleDarkMode = () => {
     </label> -->
     <img
       @click="toggleDarkMode"
-      :src="
-        isDarkMode ? '/images/darkmode_night.svg' : '/images/darkmode_day.svg'
-      "
+      :src="isDarkMode ? '/images/darkmode_night.svg' : '/images/darkmode_day.svg'"
       :alt="isDarkMode ? 'darkmode_night' : 'darkmode_day'"
       class="w-8 transition-all cursor-pointer"
     />

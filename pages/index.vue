@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import AudioBox from "@/components/AudioBox.vue";
-import DoarkModeSwich from "@/components/DarkModeSwich.vue";
+import AudioBox from '@/components/AudioBox.vue';
+import DoarkModeSwich from '@/components/DarkModeSwich.vue';
 </script>
 
 <template>
@@ -16,26 +16,11 @@ import DoarkModeSwich from "@/components/DarkModeSwich.vue";
       Audio Box
     </h3>
     <main class="flex flex-wrap content-center p-0 w-1/2 mx-auto">
-      <AudioBox
-        audioSrc="/sounds/game2065.wav"
-        imageSrc="/images/fog-day.svg"
-      />
-      <AudioBox
-        audioSrc="/sounds/game2065.wav"
-        imageSrc="/images/fog-day.svg"
-      />
-      <AudioBox
-        audioSrc="/sounds/game2065.wav"
-        imageSrc="/images/fog-day.svg"
-      />
-      <AudioBox
-        audioSrc="/sounds/game2065.wav"
-        imageSrc="/images/fog-day.svg"
-      />
-      <AudioBox
-        audioSrc="/sounds/game2065.wav"
-        imageSrc="/images/fog-day.svg"
-      />
+      <AudioBox audioSrc="/sounds/game2065.wav" imageSrc="/images/fog-day.svg" />
+      <AudioBox audioSrc="/sounds/game2065.wav" imageSrc="/images/rain.svg" />
+      <AudioBox audioSrc="/sounds/game2065.wav" imageSrc="/images/fog-day.svg" />
+      <AudioBox audioSrc="/sounds/get.mp3" imageSrc="/images/fog-day.svg" />
+      <AudioBox audioSrc="/sounds/game2065.wav" imageSrc="/images/fog-day.svg" />
     </main>
   </div>
 </template>
